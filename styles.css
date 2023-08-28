@@ -1,6 +1,12 @@
+/* Main element styles */
 body {
     background:rgb(95, 238, 238);
 }
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 h1 {
     font-family: 'Courier New',Helvetica,sans-serif;
     color: darkblue;
@@ -8,28 +14,91 @@ h1 {
     text-align: center;
 }
 
-p {
-    font-family:'Courier New', Courier, monospace;
-    color: yellow;
-    font-weight: bold;
-    font-size:25px;
-}
-
-a {
+h2 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#seasalt-icecream {
+p {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+ul,
+ol {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+
+/* index.html styles */
+p.index {
+    color: yellow;
+    font-size:25px;
+}
+
+/* seasalt-icecream.html styles */
+body.ssi {
+    background:rgb(216, 166, 73);
+}
+
+.ssi h1,
+.ssi h2 {
+    color: lightblue;
+}
+
+.ssi p {
+    color: antiquewhite;
+}
+
+.ssi ul,
+.ssi ol {
+    color: white;
+}
+a.ssi {
     color:aquamarine;
     background-color: blue;
 }
 
-#paopu-cake {
+/* paopu-cake.html styles */
+body.pf {
+    background: beige;
+}
+
+.pf ul,
+.pf ol {
+    color: blueviolet;
+}
+.pf h1,
+.pf h2 {
+    color: green;
+}
+
+.pf p {
+    color: goldenrod;
+}
+a.pf {
     background-color: forestgreen;
     color:yellow;
 }
 
-#nocturne-cupcake {
+/* nocturne-cupcake.html styles */
+body.nct {
+    background: rgb(61, 19, 6);
+}
+
+.nct h1,
+.nct h2 {
+    color: yellow;
+}
+
+.nct p {
+    color: orange;
+}
+
+.nct ul,
+.nct ol {
+    color:lightcoral;
+}
+a.nct {
     background-color: black;
     color: yellow;
 }
