@@ -1,0 +1,36 @@
+body {
+    background:rgb(95, 238, 238);
+}
+h1 {
+    font-family: 'Courier New',Helvetica,sans-serif;
+    color: darkblue;
+    font-size: 45px;
+    text-align: center;
+}
+
+p {
+    font-family:'Courier New', Courier, monospace;
+    color: yellow;
+    font-weight: bold;
+    font-size:25px;
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#seasalt-icecream {
+    color:aquamarine;
+    background-color: blue;
+}
+
+#paopu-cake {
+    background-color: forestgreen;
+    color:yellow;
+}
+
+#nocturne-cupcake {
+    background-color: black;
+    color: yellow;
+}
+
