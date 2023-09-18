@@ -1,17 +1,65 @@
 /* Main element styles */
+html {
+    box-sizing: border-box;
+}
 body {
     background:rgb(95, 238, 238);
 }
 
-a {
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+button {
     font-family: 'Courier New', Courier, monospace;
+    margin: 24px auto;
+    padding:20px;
+    width:300px;
+    height:70px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
+    font-size:large;
+    border:0px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.568); 
 }
 
+button:hover {
+    box-shadow:inset 2px 2px 4px rgba(0,0,0,0.568);
+}
+
+button:active {
+    box-shadow: inset 2px 2px 6px 4px rgba(0,0,0,0.568);
+    background-color:rgba(0, 0, 0, 0.568)
+}
+
+#backhome {
+    font-family:'Courier New', Courier, monospace;
+    border: 2px black solid;
+    color:black;
+    background-color:white;
+    padding:4px;
+}
+
+#backhome:hover{
+    background-color:black;
+    color:white;
+}
 h1 {
     font-family: 'Courier New',Helvetica,sans-serif;
     color: darkblue;
+    background-color:lightskyblue;
     font-size: 45px;
     text-align: center;
+    padding:20px;
+    width:400px;
+    margin:30px auto;
+}
+h1 span {
+    display:inline-block;
 }
 
 h2 {
@@ -21,61 +69,103 @@ h2 {
 p {
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
+    text-align:center;
 }
 
 ul,
 ol {
     font-family: 'Courier New', Courier, monospace;
-    line-height: 1.5;
+    margin:0px 16px;
 }
 
+li {
+    padding:16px;
+}
+
+ .card {
+        background-color:white;
+        width:568px;
+        margin:0px auto 32px;
+  }
+
+.card h2 {
+    text-align:center;
+    padding:8px;
+}
+
+img {
+    margin:0px auto;
+    display: block;
+    border:3px solid
+}
 /* index.html styles */
 p.index {
     color: yellow;
     font-size:25px;
+    text-align:center;
+    margin:0px 0px 48px 0px;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.589);
 }
 
+.homecard {
+    background-color: rgba(255, 255, 255, 0.596);
+    padding:22px 0px 38px 0px;
+    width:600px;
+    margin:0px auto;
+}
 /* seasalt-icecream.html styles */
 body.ssi {
-    background:rgb(216, 166, 73);
+    background:rgb(247, 231, 145);
 }
 
 .ssi h1,
 .ssi h2 {
-    color: lightblue;
+    color:white;
+    border-color:rgba(255, 255, 255, 0.616)
 }
 
-.ssi p {
-    color: antiquewhite;
+.ssi h2 {
+    background-color: lightskyblue;
+}
+.ssi img {
+    border-color:lightskyblue;
 }
 
 .ssi ul,
-.ssi ol {
-    color: white;
+.ssi ol,
+.ssi p {
+    color: rgba(0, 0, 0, 0.452);
 }
-a.ssi {
+
+button.ssi {
     color:aquamarine;
     background-color: blue;
 }
 
 /* paopu-cake.html styles */
 body.pf {
-    background: beige;
+    background: rgb(206, 252, 255);
 }
 
 .pf ul,
-.pf ol {
-    color: blueviolet;
+.pf ol,
+.pf p {
+    color: rgba(0, 162, 255, 0.671);
 }
 .pf h1,
 .pf h2 {
     color: green;
+    background-color:rgba(255, 255, 0, 0.363);
 }
 
-.pf p {
-    color: goldenrod;
+.pf img {
+    width:auto;
+    height:322px;
+    border-color:rgba(255, 255, 0, 0.363);
+    margin-bottom:32px;
 }
-a.pf {
+
+button.pf {
     background-color: forestgreen;
     color:yellow;
 }
@@ -90,16 +180,28 @@ body.nct {
     color: yellow;
 }
 
-.nct p {
-    color: orange;
+.nct h1 {
+    background-color:orange
+}
+.nct h2 {
+    background-color:orange;
 }
 
 .nct ul,
-.nct ol {
-    color:lightcoral;
+.nct ol,
+.nct p {
+    color:rgb(61, 19, 6);
 }
-a.nct {
+
+button.nct {
     background-color: black;
     color: yellow;
+}
+
+.nct img {
+    border-color:orange;
+    width:auto;
+    height:322px;
+    margin-bottom:32px;
 }
 
